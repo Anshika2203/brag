@@ -304,6 +304,56 @@ h3 { font-size: 1.18rem; letter-spacing: -0.01em; }
   border-radius: 100px;
 }
 .card-body { padding: var(--s3) var(--s4) var(--s2); }
+.card-score {
+  display: flex;
+  align-items: center;
+  gap: var(--s3);
+  padding-bottom: var(--s3);
+  margin-bottom: var(--s3);
+  border-bottom: 1px solid var(--border);
+}
+.score-ring {
+  position: relative;
+  flex: none;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: conic-gradient(
+    var(--amber) calc(var(--score) * 1%),
+    var(--cream-deep) 0
+  );
+}
+.score-ring::after {
+  content: "";
+  position: absolute;
+  inset: 4px;
+  border-radius: 50%;
+  background: #fff;
+}
+.score-num {
+  position: relative;
+  z-index: 1;
+  font-family: var(--sans);
+  font-size: 0.68rem;
+  font-weight: 600;
+  color: var(--ember);
+  letter-spacing: -0.01em;
+}
+.score-pct { font-size: 0.5rem; }
+.score-label {
+  font-size: 0.66rem;
+  font-weight: 600;
+  color: var(--clay);
+  letter-spacing: 0.01em;
+}
+.score-why {
+  font-size: 0.58rem;
+  color: var(--text-3);
+  line-height: 1.45;
+}
+
 .card-bio {
   font-size: 0.74rem;
   color: var(--text-2);
