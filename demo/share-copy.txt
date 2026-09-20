@@ -1,0 +1,4 @@
+Riders can finally see why a horse is being suggested. The profile card now leads with a
+Stable Match score and the three signals behind it — turnout hours, grazing style, mutual
+pastures — so a 92% reads differently from a 41% before anyone swipes.
+Shipped in #1.
